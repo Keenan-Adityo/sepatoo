@@ -1,5 +1,4 @@
 import 'package:core/presentation/pages/cart_page.dart';
-import 'package:core/presentation/pages/login_page.dart';
 import 'package:core/presentation/pages/profile_page.dart';
 import 'package:core/styles/size_config.dart';
 import 'package:core/styles/text_styles.dart';
@@ -14,7 +13,7 @@ class DrawerMenu extends StatelessWidget {
     SizeConfig.init(context);
     print(SizeConfig.screenWidth);
     return Scaffold(
-      backgroundColor: Color(0xff1483C2),
+      backgroundColor: const Color(0xff1483C2),
       body: SafeArea(
         child: Container(
           width: SizeConfig.screenWidth * 0.8,
@@ -23,7 +22,7 @@ class DrawerMenu extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Image.asset("assets/human.png"),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               Text(
@@ -31,7 +30,7 @@ class DrawerMenu extends StatelessWidget {
                 style: kHeading2.copyWith(
                     fontSize: 20, overflow: TextOverflow.visible),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 55,
               ),
               GestureDetector(
@@ -39,7 +38,7 @@ class DrawerMenu extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => ProfilePage(),
+                      builder: (context) => const ProfilePage(),
                     ),
                   );
                 },
@@ -50,7 +49,7 @@ class DrawerMenu extends StatelessWidget {
                       // ignore: deprecated_member_use
                       color: Colors.white,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 22,
                     ),
                     Text(
@@ -60,7 +59,7 @@ class DrawerMenu extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               GestureDetector(
@@ -68,14 +67,14 @@ class DrawerMenu extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => CartPage(),
+                      builder: (context) => const CartPage(),
                     ),
                   );
                 },
                 child: Row(
                   children: [
                     Image.asset("assets/bag-2.png"),
-                    SizedBox(
+                    const SizedBox(
                       width: 22,
                     ),
                     Text(
@@ -85,16 +84,16 @@ class DrawerMenu extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               Row(
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.favorite_border,
                     color: Colors.white,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 22,
                   ),
                   Text(
@@ -103,7 +102,7 @@ class DrawerMenu extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               Row(
@@ -113,7 +112,7 @@ class DrawerMenu extends StatelessWidget {
                     // ignore: deprecated_member_use
                     color: Colors.white,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 22,
                   ),
                   Text(
@@ -122,16 +121,16 @@ class DrawerMenu extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               Row(
                 children: [
-                  Icon(
+                  const Icon(
                     Icons.notifications_none,
                     color: Colors.white,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 22,
                   ),
                   Text(
@@ -140,7 +139,7 @@ class DrawerMenu extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               Row(
@@ -150,7 +149,7 @@ class DrawerMenu extends StatelessWidget {
                     // ignore: deprecated_member_use
                     color: Colors.white,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 22,
                   ),
                   Text(
@@ -159,12 +158,12 @@ class DrawerMenu extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               Container(
-                padding: EdgeInsets.only(top: 30),
-                decoration: BoxDecoration(
+                padding: const EdgeInsets.only(top: 30),
+                decoration: const BoxDecoration(
                     border:
                         Border(top: BorderSide(width: 1, color: Colors.white))),
                 child: GestureDetector(
@@ -178,7 +177,7 @@ class DrawerMenu extends StatelessWidget {
                         // ignore: deprecated_member_use
                         color: Colors.white,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 22,
                       ),
                       Text(

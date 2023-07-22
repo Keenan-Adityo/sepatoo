@@ -19,13 +19,13 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     SizeConfig.init(context);
     return ZoomDrawer(
-      menuBackgroundColor: Color(0xff1483C2),
+      menuBackgroundColor: const Color(0xff1483C2),
       angle: -10,
       borderRadius: 40,
       slideWidth: SizeConfig.screenWidth * 0.64,
       style: DrawerStyle.defaultStyle,
-      menuScreen: DrawerMenu(),
-      mainScreen: HomeScreen(),
+      menuScreen: const DrawerMenu(),
+      mainScreen: const HomeScreen(),
     );
   }
 }
@@ -40,9 +40,9 @@ class HomeScreen extends StatelessWidget {
     return Stack(
       children: [
         Scaffold(
-          backgroundColor: Color(0xffF7F7F9),
+          backgroundColor: const Color(0xffF7F7F9),
           appBar: AppBar(
-            backgroundColor: Color(0xffF7F7F9),
+            backgroundColor: const Color(0xffF7F7F9),
             leading: IconButton(
               onPressed: () {
                 ZoomDrawer.of(context)!.toggle();
@@ -71,7 +71,7 @@ class HomeScreen extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => CartPage(),
+                      builder: (context) => const CartPage(),
                     ),
                   );
                 },
@@ -79,7 +79,7 @@ class HomeScreen extends StatelessWidget {
                   "assets/background/home_2.png",
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 20,
               ),
             ],
@@ -115,11 +115,11 @@ class HomeScreen extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 14,
                       ),
                       CircleAvatar(
-                        backgroundColor: Color(0xff0D6EFD),
+                        backgroundColor: const Color(0xff0D6EFD),
                         radius: 26,
                         child: IconButton(
                             onPressed: () {},
@@ -129,7 +129,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: 20),
+                  padding: const EdgeInsets.symmetric(horizontal: 20),
                   width: double.infinity,
                   child: Text(
                     "Select Category",
@@ -138,7 +138,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.only(top: 16, bottom: 20, left: 21),
+                  margin: const EdgeInsets.only(top: 16, bottom: 20, left: 21),
                   width: SizeConfig.screenWidth,
                   height: 40,
                   child: ListView.builder(
@@ -148,13 +148,13 @@ class HomeScreen extends StatelessWidget {
                     itemBuilder: (context, index) {
                       var items = ["All Shoes", "Outdoor", "Tennis"];
                       return Container(
-                        margin: EdgeInsets.only(right: 16),
+                        margin: const EdgeInsets.only(right: 16),
                         width: 108,
                         alignment: Alignment.center,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
                           color: (items[index] == "Outdoor")
-                              ? Color(0xff0D6EFD)
+                              ? const Color(0xff0D6EFD)
                               : Colors.white,
                         ),
                         child: Text(
@@ -171,7 +171,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: 20),
+                  padding: const EdgeInsets.symmetric(horizontal: 20),
                   width: double.infinity,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -204,7 +204,7 @@ class HomeScreen extends StatelessWidget {
                           ),
                           child: Stack(
                             children: [
-                              Positioned(
+                              const Positioned(
                                 top: 12,
                                 left: 12,
                                 child: Icon(
@@ -227,7 +227,7 @@ class HomeScreen extends StatelessWidget {
                                           fontSize: 12,
                                           fontWeight: FontWeight.w600),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 4,
                                     ),
                                     Text(
@@ -235,7 +235,7 @@ class HomeScreen extends StatelessWidget {
                                       textAlign: TextAlign.left,
                                       style: kHeading4,
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 12,
                                     ),
                                     Text(
@@ -253,14 +253,14 @@ class HomeScreen extends StatelessWidget {
                                 bottom: 0,
                                 right: 0,
                                 child: Container(
-                                    padding: EdgeInsets.all(5),
-                                    decoration: BoxDecoration(
+                                    padding: const EdgeInsets.all(5),
+                                    decoration: const BoxDecoration(
                                         color: Color(0xff0D6EFD),
                                         borderRadius: BorderRadius.only(
                                           topLeft: Radius.circular(14),
                                           bottomRight: Radius.circular(14),
                                         )),
-                                    child: Icon(
+                                    child: const Icon(
                                       Icons.add,
                                       color: Colors.white,
                                     )),
@@ -268,7 +268,7 @@ class HomeScreen extends StatelessWidget {
                             ],
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 20,
                         ),
                         Container(
@@ -278,7 +278,7 @@ class HomeScreen extends StatelessWidget {
                           ),
                           child: Stack(
                             children: [
-                              Positioned(
+                              const Positioned(
                                 top: 12,
                                 left: 12,
                                 child: Icon(
@@ -302,7 +302,7 @@ class HomeScreen extends StatelessWidget {
                                           fontSize: 12,
                                           fontWeight: FontWeight.w600),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 4,
                                     ),
                                     Text(
@@ -310,7 +310,7 @@ class HomeScreen extends StatelessWidget {
                                       textAlign: TextAlign.left,
                                       style: kHeading4,
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 12,
                                     ),
                                     Text(
@@ -328,14 +328,14 @@ class HomeScreen extends StatelessWidget {
                                 bottom: 0,
                                 right: 0,
                                 child: Container(
-                                    padding: EdgeInsets.all(5),
-                                    decoration: BoxDecoration(
+                                    padding: const EdgeInsets.all(5),
+                                    decoration: const BoxDecoration(
                                         color: Color(0xff0D6EFD),
                                         borderRadius: BorderRadius.only(
                                           topLeft: Radius.circular(14),
                                           bottomRight: Radius.circular(14),
                                         )),
-                                    child: Icon(
+                                    child: const Icon(
                                       Icons.add,
                                       color: Colors.white,
                                     )),
@@ -348,7 +348,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: 20),
+                  padding: const EdgeInsets.symmetric(horizontal: 20),
                   width: double.infinity,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -390,26 +390,6 @@ class HomeScreen extends StatelessWidget {
               ],
             ),
           ),
-          floatingActionButton: Padding(
-            padding: const EdgeInsets.only(bottom: 50),
-            child: CircleAvatar(
-              backgroundColor: Color(0xff0D6EFD),
-              radius: 26,
-              child: IconButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => CartPage(),
-                    ),
-                  );
-                },
-                icon: Image.asset("assets/bag-2.png"),
-              ),
-            ),
-          ),
-          floatingActionButtonLocation:
-              FloatingActionButtonLocation.centerDocked,
         ),
         Positioned(
           bottom: 0,
@@ -417,13 +397,13 @@ class HomeScreen extends StatelessWidget {
             width: SizeConfig.screenWidth,
             child: Container(
               height: 106,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
                     image: AssetImage("assets/background/nav.png"),
                     fit: BoxFit.cover),
               ),
               child: Padding(
-                padding: EdgeInsets.fromLTRB(30, 52, 30, 0),
+                padding: const EdgeInsets.fromLTRB(30, 52, 30, 0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -431,7 +411,7 @@ class HomeScreen extends StatelessWidget {
                     Row(
                       children: [
                         SvgPicture.asset("assets/icons/home-2.svg"),
-                        SizedBox(
+                        const SizedBox(
                           width: 41,
                         ),
                         Image.asset("assets/icons/heart.png")
@@ -440,7 +420,7 @@ class HomeScreen extends StatelessWidget {
                     Row(
                       children: [
                         SvgPicture.asset("assets/icons/notification.svg"),
-                        SizedBox(
+                        const SizedBox(
                           width: 41,
                         ),
                         GestureDetector(
@@ -448,7 +428,7 @@ class HomeScreen extends StatelessWidget {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => ProfilePage(),
+                                  builder: (context) => const ProfilePage(),
                                 ),
                               );
                             },
@@ -457,6 +437,29 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                   ],
+                ),
+              ),
+            ),
+          ),
+        ),
+        Positioned.fill(
+          child: Align(
+            alignment: Alignment.bottomCenter,
+            child: Padding(
+              padding: const EdgeInsets.only(bottom: 50),
+              child: CircleAvatar(
+                backgroundColor: const Color(0xff0D6EFD),
+                radius: 26,
+                child: IconButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const CartPage(),
+                      ),
+                    );
+                  },
+                  icon: Image.asset("assets/bag-2.png"),
                 ),
               ),
             ),

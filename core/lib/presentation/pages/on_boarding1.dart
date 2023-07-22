@@ -11,7 +11,7 @@ class OnBoarding1 extends StatelessWidget {
   Widget build(BuildContext context) {
     SizeConfig.init(context);
     return Scaffold(
-      backgroundColor: Color(0xff1483C2),
+      backgroundColor: const Color(0xff1483C2),
       body: SingleChildScrollView(
         child: Stack(
           children: [
@@ -42,7 +42,7 @@ class OnBoarding1 extends StatelessWidget {
                     style: kHeading1,
                     textAlign: TextAlign.center,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 19,
                   ),
                   Image.asset("assets/background/ob1_1.png")
@@ -76,7 +76,7 @@ class OnBoarding1 extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => OnBoarding2(),
+                            builder: (context) => const OnBoarding2(),
                           ));
                     }),
               ],

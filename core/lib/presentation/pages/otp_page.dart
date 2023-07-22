@@ -22,19 +22,19 @@ class OTPPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   IconButton(
-                    padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+                    padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
                     iconSize: 15,
-                    icon: Icon(Icons.arrow_back_ios),
+                    icon: const Icon(Icons.arrow_back_ios),
                     onPressed: () {
                       Navigator.pop(context);
                     },
                     style: ButtonStyle(
                       backgroundColor:
-                          MaterialStateProperty.all(Color(0xffF7F7F9)),
+                          MaterialStateProperty.all(const Color(0xffF7F7F9)),
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.symmetric(horizontal: 10),
+                    padding: const EdgeInsets.symmetric(horizontal: 10),
                     width: double.infinity,
                     child: Column(
                       children: [
@@ -43,7 +43,7 @@ class OTPPage extends StatelessWidget {
                           style: kHeading3,
                           textAlign: TextAlign.center,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 8,
                         ),
                         Text(
@@ -54,17 +54,17 @@ class OTPPage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 40,
                   ),
                   Text(
                     "OTP Code",
                     style: kButtonText.copyWith(fontSize: 21),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 16,
                   ),
-                  Row(
+                  const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       OtpFormField(last: false),
@@ -73,7 +73,7 @@ class OTPPage extends StatelessWidget {
                       OtpFormField(last: true),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 40,
                   ),
                   CustomButton(
@@ -82,12 +82,12 @@ class OTPPage extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => HomePage(),
+                            builder: (context) => const HomePage(),
                           ));
                     },
-                    color: Color(0xff0D6EFD),
+                    color: const Color(0xff0D6EFD),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Row(

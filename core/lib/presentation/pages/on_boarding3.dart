@@ -11,7 +11,7 @@ class OnBoarding3 extends StatelessWidget {
   Widget build(BuildContext context) {
     SizeConfig.init(context);
     return Scaffold(
-      backgroundColor: Color(0xff1483C2),
+      backgroundColor: const Color(0xff1483C2),
       body: SingleChildScrollView(
         child: Stack(
           children: [
@@ -26,7 +26,7 @@ class OnBoarding3 extends StatelessWidget {
               child: Image.asset("assets/background/ob2_2.png"),
             ),
             Container(
-              padding: EdgeInsets.only(top: 453),
+              padding: const EdgeInsets.only(top: 453),
               width: SizeConfig.screenWidth,
               child: Column(
                 children: [
@@ -52,7 +52,7 @@ class OnBoarding3 extends StatelessWidget {
                     "assets/background/ob3_3.png",
                     alignment: Alignment.center,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 65,
                   ),
                   OnBoardingButton(
@@ -62,14 +62,14 @@ class OnBoarding3 extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => LoginPage(),
+                              builder: (context) => const LoginPage(),
                             ));
                       }),
                 ],
               ),
             ),
             Container(
-              padding: EdgeInsets.only(top: 436),
+              padding: const EdgeInsets.only(top: 436),
               width: double.infinity,
               child: Image.asset(
                 "assets/background/nike_bg.png",

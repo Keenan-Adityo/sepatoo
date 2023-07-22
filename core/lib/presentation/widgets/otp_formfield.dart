@@ -37,7 +37,7 @@ class OtpFormField extends StatelessWidget {
         style: kBodyText.copyWith(color: Colors.black),
         inputFormatters: [LengthLimitingTextInputFormatter(1)],
         decoration: InputDecoration(
-          fillColor: Color(0xffF7F7F9),
+          fillColor: const Color(0xffF7F7F9),
           filled: true,
           hintStyle: kBodyText,
           hintText: "X",

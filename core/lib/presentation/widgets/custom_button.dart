@@ -6,7 +6,7 @@ class CustomButton extends StatelessWidget {
   final String text;
   final Color color;
 
-  CustomButton({
+  const CustomButton({
     required this.text,
     required this.callback,
     required this.color,
@@ -26,7 +26,7 @@ class CustomButton extends StatelessWidget {
         child: InkWell(
           onTap: callback,
           child: Container(
-            padding: EdgeInsets.symmetric(vertical: 17, horizontal: 25),
+            padding: const EdgeInsets.symmetric(vertical: 17, horizontal: 25),
             child: Text(
               text,
               textAlign: TextAlign.center,

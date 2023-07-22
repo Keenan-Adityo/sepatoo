@@ -1,12 +1,5 @@
-import 'package:core/presentation/pages/edit_page.dart';
-import 'package:core/presentation/pages/forgot_password_page.dart';
-import 'package:core/presentation/pages/home_page.dart';
-import 'package:core/presentation/pages/register_page.dart';
-import 'package:core/presentation/widgets/custom_button.dart';
-import 'package:core/presentation/widgets/onboarding_button.dart';
 import 'package:core/styles/text_styles.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class EditPage extends StatelessWidget {
   const EditPage({Key? key}) : super(key: key);
@@ -19,12 +12,12 @@ class EditPage extends StatelessWidget {
           padding: const EdgeInsets.only(left: 20),
           child: IconButton(
             iconSize: 15,
-            icon: Icon(Icons.arrow_back_ios),
+            icon: const Icon(Icons.arrow_back_ios),
             onPressed: () {
               Navigator.pop(context);
             },
             style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all(Color(0xffF7F7F9)),
+              backgroundColor: MaterialStateProperty.all(const Color(0xffF7F7F9)),
             ),
           ),
         ),
@@ -40,7 +33,7 @@ class EditPage extends StatelessWidget {
             },
             child: Text(
               "Done",
-              style: kHeading2.copyWith(fontSize: 15, color: Color(0xff0D6EFD)),
+              style: kHeading2.copyWith(fontSize: 15, color: const Color(0xff0D6EFD)),
             ),
           ),
         ],
@@ -53,7 +46,7 @@ class EditPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  margin: EdgeInsets.only(top: 40),
+                  margin: const EdgeInsets.only(top: 40),
                   alignment: Alignment.center,
                   child: Column(
                     children: [
@@ -64,25 +57,25 @@ class EditPage extends StatelessWidget {
                       ),
                       Text(
                         "Change Profile",
-                        style: kBodyText.copyWith(color: Color(0xff0D6EFD)),
+                        style: kBodyText.copyWith(color: const Color(0xff0D6EFD)),
                       ),
                     ],
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 22,
                 ),
                 Text(
                   "First Name",
                   style: kHeading4,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 12,
                 ),
                 TextField(
                   style: const TextStyle(fontSize: 15),
                   decoration: InputDecoration(
-                    suffixIcon: Icon(
+                    suffixIcon: const Icon(
                       Icons.check,
                       color: Color(0xff0D6EFD),
                     ),
@@ -91,27 +84,27 @@ class EditPage extends StatelessWidget {
                       vertical: 5,
                       horizontal: 20,
                     ),
-                    fillColor: Color(0xffF7F7F9),
+                    fillColor: const Color(0xffF7F7F9),
                     filled: true,
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20),
                         borderSide: BorderSide.none),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
                 Text(
                   "Last Name",
                   style: kHeading4,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 12,
                 ),
                 TextField(
                   style: const TextStyle(fontSize: 15),
                   decoration: InputDecoration(
-                    suffixIcon: Icon(
+                    suffixIcon: const Icon(
                       Icons.check,
                       color: Color(0xff0D6EFD),
                     ),
@@ -120,27 +113,27 @@ class EditPage extends StatelessWidget {
                       vertical: 5,
                       horizontal: 20,
                     ),
-                    fillColor: Color(0xffF7F7F9),
+                    fillColor: const Color(0xffF7F7F9),
                     filled: true,
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20),
                         borderSide: BorderSide.none),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
                 Text(
                   "Location",
                   style: kHeading4,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 12,
                 ),
                 TextField(
                   style: const TextStyle(fontSize: 15),
                   decoration: InputDecoration(
-                    suffixIcon: Icon(
+                    suffixIcon: const Icon(
                       Icons.check,
                       color: Color(0xff0D6EFD),
                     ),
@@ -149,32 +142,32 @@ class EditPage extends StatelessWidget {
                       vertical: 5,
                       horizontal: 20,
                     ),
-                    fillColor: Color(0xffF7F7F9),
+                    fillColor: const Color(0xffF7F7F9),
                     filled: true,
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20),
                         borderSide: BorderSide.none),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
                 Text(
                   "Mobile Number",
                   style: kHeading4,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 12,
                 ),
                 TextField(
                   style: const TextStyle(fontSize: 15),
                   decoration: InputDecoration(
-                    suffixIcon: Icon(
+                    suffixIcon: const Icon(
                       Icons.check,
                       color: Color(0xff0D6EFD),
                     ),
                     prefixIcon: Container(
-                      margin: EdgeInsets.only(left: 16),
+                      margin: const EdgeInsets.only(left: 16),
                       width: 70,
                       child: Row(
                         children: [
@@ -182,7 +175,7 @@ class EditPage extends StatelessWidget {
                             "+62",
                             style: kSubtitle,
                           ),
-                          Icon(Icons.keyboard_arrow_down)
+                          const Icon(Icons.keyboard_arrow_down)
                         ],
                       ),
                     ),
@@ -191,14 +184,14 @@ class EditPage extends StatelessWidget {
                       vertical: 5,
                       horizontal: 20,
                     ),
-                    fillColor: Color(0xffF7F7F9),
+                    fillColor: const Color(0xffF7F7F9),
                     filled: true,
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20),
                         borderSide: BorderSide.none),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
               ],

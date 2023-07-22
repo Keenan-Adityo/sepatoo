@@ -6,7 +6,7 @@ class OnBoardingButton extends StatelessWidget {
   final String text;
   final Color color;
 
-  OnBoardingButton({
+  const OnBoardingButton({
     required this.text,
     required this.callback,
     required this.color,
@@ -16,7 +16,7 @@ class OnBoardingButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+      margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
       width: double.infinity,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(13),
@@ -27,7 +27,7 @@ class OnBoardingButton extends StatelessWidget {
         child: InkWell(
           onTap: callback,
           child: Container(
-            padding: EdgeInsets.symmetric(vertical: 17, horizontal: 130),
+            padding: const EdgeInsets.symmetric(vertical: 17, horizontal: 130),
             child: Text(
               text,
               textAlign: TextAlign.center,

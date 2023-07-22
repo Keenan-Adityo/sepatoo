@@ -1,6 +1,5 @@
 import 'package:core/presentation/pages/otp_page.dart';
 import 'package:core/presentation/widgets/custom_button.dart';
-import 'package:core/presentation/widgets/onboarding_button.dart';
 import 'package:core/styles/size_config.dart';
 import 'package:core/styles/text_styles.dart';
 import 'package:flutter/material.dart';
@@ -22,19 +21,19 @@ class ForgotPasswordPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   IconButton(
-                    padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+                    padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
                     iconSize: 15,
-                    icon: Icon(Icons.arrow_back_ios),
+                    icon: const Icon(Icons.arrow_back_ios),
                     onPressed: () {
                       Navigator.pop(context);
                     },
                     style: ButtonStyle(
                       backgroundColor:
-                          MaterialStateProperty.all(Color(0xffF7F7F9)),
+                          MaterialStateProperty.all(const Color(0xffF7F7F9)),
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.symmetric(horizontal: 10),
+                    padding: const EdgeInsets.symmetric(horizontal: 10),
                     width: double.infinity,
                     child: Column(
                       children: [
@@ -43,7 +42,7 @@ class ForgotPasswordPage extends StatelessWidget {
                           style: kHeading3,
                           textAlign: TextAlign.center,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 8,
                         ),
                         Text(
@@ -54,7 +53,7 @@ class ForgotPasswordPage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 40,
                   ),
                   TextField(
@@ -66,13 +65,13 @@ class ForgotPasswordPage extends StatelessWidget {
                           vertical: 5,
                           horizontal: 20,
                         ),
-                        fillColor: Color(0xffF7F7F9),
+                        fillColor: const Color(0xffF7F7F9),
                         filled: true,
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(20),
                             borderSide: BorderSide.none)),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 40,
                   ),
                   CustomButton(
@@ -86,15 +85,15 @@ class ForgotPasswordPage extends StatelessWidget {
                               borderRadius: BorderRadius.circular(16),
                               color: Colors.white,
                             ),
-                            margin: EdgeInsets.symmetric(horizontal: 20),
-                            padding: EdgeInsets.symmetric(
+                            margin: const EdgeInsets.symmetric(horizontal: 20),
+                            padding: const EdgeInsets.symmetric(
                                 horizontal: 10, vertical: 30),
                             width: double.infinity,
                             height: 215,
                             child: Column(
                               children: [
                                 Image.asset("assets/msg.png"),
-                                SizedBox(
+                                const SizedBox(
                                   height: 24,
                                 ),
                                 Text(
@@ -103,7 +102,7 @@ class ForgotPasswordPage extends StatelessWidget {
                                       color: Colors.black,
                                       fontWeight: FontWeight.bold),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 8,
                                 ),
                                 Text(
@@ -120,12 +119,12 @@ class ForgotPasswordPage extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => OTPPage(),
+                            builder: (context) => const OTPPage(),
                           ));
                     },
-                    color: Color(0xff0D6EFD),
+                    color: const Color(0xff0D6EFD),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 24,
                   ),
                 ],

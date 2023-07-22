@@ -1,7 +1,5 @@
 import 'package:core/presentation/pages/forgot_password_page.dart';
-import 'package:core/presentation/pages/home_page.dart';
 import 'package:core/presentation/widgets/custom_button.dart';
-import 'package:core/presentation/widgets/onboarding_button.dart';
 import 'package:core/styles/text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -22,19 +20,19 @@ class RegisterPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   IconButton(
-                    padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+                    padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
                     iconSize: 15,
-                    icon: Icon(Icons.arrow_back_ios),
+                    icon: const Icon(Icons.arrow_back_ios),
                     onPressed: () {
                       Navigator.pop(context);
                     },
                     style: ButtonStyle(
                       backgroundColor:
-                          MaterialStateProperty.all(Color(0xffF7F7F9)),
+                          MaterialStateProperty.all(const Color(0xffF7F7F9)),
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.symmetric(horizontal: 10),
+                    padding: const EdgeInsets.symmetric(horizontal: 10),
                     width: double.infinity,
                     child: Column(
                       children: [
@@ -43,7 +41,7 @@ class RegisterPage extends StatelessWidget {
                           style: kHeading3,
                           textAlign: TextAlign.center,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 8,
                         ),
                         Text(
@@ -54,14 +52,14 @@ class RegisterPage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   Text(
                     "Your Name",
                     style: kHeading4,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 12,
                   ),
                   TextField(
@@ -72,20 +70,20 @@ class RegisterPage extends StatelessWidget {
                           vertical: 5,
                           horizontal: 20,
                         ),
-                        fillColor: Color(0xffF7F7F9),
+                        fillColor: const Color(0xffF7F7F9),
                         filled: true,
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(20),
                             borderSide: BorderSide.none)),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 12,
                   ),
                   Text(
                     "Email Address",
                     style: kHeading4,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 12,
                   ),
                   TextField(
@@ -96,20 +94,20 @@ class RegisterPage extends StatelessWidget {
                           vertical: 5,
                           horizontal: 20,
                         ),
-                        fillColor: Color(0xffF7F7F9),
+                        fillColor: const Color(0xffF7F7F9),
                         filled: true,
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(20),
                             borderSide: BorderSide.none)),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   Text(
                     "Password",
                     style: kHeading4,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 12,
                   ),
                   TextField(
@@ -118,19 +116,19 @@ class RegisterPage extends StatelessWidget {
                     decoration: InputDecoration(
                         suffixIcon: IconButton(
                             onPressed: () {},
-                            icon: Icon(Icons.remove_red_eye_outlined)),
+                            icon: const Icon(Icons.remove_red_eye_outlined)),
                         hintText: "********",
                         contentPadding: const EdgeInsets.symmetric(
                           vertical: 5,
                           horizontal: 20,
                         ),
-                        fillColor: Color(0xffF7F7F9),
+                        fillColor: const Color(0xffF7F7F9),
                         filled: true,
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(20),
                             borderSide: BorderSide.none)),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 40,
                   ),
                   CustomButton(
@@ -139,12 +137,12 @@ class RegisterPage extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => ForgotPasswordPage(),
+                            builder: (context) => const ForgotPasswordPage(),
                           ));
                     },
-                    color: Color(0xff0D6EFD),
+                    color: const Color(0xff0D6EFD),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 24,
                   ),
                   Container(
@@ -154,17 +152,17 @@ class RegisterPage extends StatelessWidget {
                     ),
                     child: Material(
                       borderRadius: BorderRadius.circular(13),
-                      color: Color(0xffF7F7F9),
+                      color: const Color(0xffF7F7F9),
                       child: InkWell(
                         onTap: () {},
                         child: Container(
-                          padding: EdgeInsets.symmetric(
+                          padding: const EdgeInsets.symmetric(
                               vertical: 17, horizontal: 25),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               SvgPicture.asset("assets/icons/google.svg"),
-                              SizedBox(
+                              const SizedBox(
                                 width: 14,
                               ),
                               Text(
