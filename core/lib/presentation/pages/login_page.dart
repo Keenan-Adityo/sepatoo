@@ -168,6 +168,7 @@ class LoginPage extends StatelessWidget {
                             builder: (context) => RegisterPage(),
                           ));
                     },
+                    
                     child: Text(
                       "Create Account",
                       style: kHeading4.copyWith(
