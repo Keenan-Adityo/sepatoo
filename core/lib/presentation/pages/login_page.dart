@@ -23,8 +23,8 @@ class LoginPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     IconButton(
-                      padding:
-                          const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 15, vertical: 10),
                       iconSize: 15,
                       icon: const Icon(Icons.arrow_back_ios),
                       onPressed: () {
@@ -119,12 +119,14 @@ class LoginPage extends StatelessWidget {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => const ForgotPasswordPage(),
+                                builder: (context) =>
+                                    const ForgotPasswordPage(),
                               ));
                         },
                         child: Text(
                           "Recovery Password",
-                          style: kBodyText.copyWith(color: const Color(0xff707B81)),
+                          style: kBodyText.copyWith(
+                              color: const Color(0xff707B81)),
                         ),
                       ),
                     ),

@@ -1,4 +1,5 @@
 import 'package:core/presentation/pages/cart_page.dart';
+import 'package:core/presentation/pages/detail_page.dart';
 import 'package:core/presentation/pages/profile_page.dart';
 import 'package:core/presentation/widgets/drawer_menu.dart';
 import 'package:core/styles/size_config.dart';
@@ -197,150 +198,170 @@ class HomeScreen extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(horizontal: 20.0),
                     child: Row(
                       children: [
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(16),
-                          ),
-                          child: Stack(
-                            children: [
-                              const Positioned(
-                                top: 12,
-                                left: 12,
-                                child: Icon(
-                                  Icons.favorite_border,
-                                  size: 20,
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => DetailPage(),
+                                ));
+                          },
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(16),
+                            ),
+                            child: Stack(
+                              children: [
+                                const Positioned(
+                                  top: 12,
+                                  left: 12,
+                                  child: Icon(
+                                    Icons.favorite_border,
+                                    size: 20,
+                                  ),
                                 ),
-                              ),
-                              Positioned(
-                                  child: Padding(
-                                padding: const EdgeInsets.all(12.0),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Image.asset("assets/shoes_1.png"),
-                                    Text(
-                                      "BEST SELLER",
-                                      textAlign: TextAlign.left,
-                                      style: kSubtitle.copyWith(
-                                          color: Colors.blue,
-                                          fontSize: 12,
-                                          fontWeight: FontWeight.w600),
-                                    ),
-                                    const SizedBox(
-                                      height: 4,
-                                    ),
-                                    Text(
-                                      "Nike Jordan",
-                                      textAlign: TextAlign.left,
-                                      style: kHeading4,
-                                    ),
-                                    const SizedBox(
-                                      height: 12,
-                                    ),
-                                    Text(
-                                      "Rp. 302.000",
-                                      textAlign: TextAlign.left,
-                                      style: kSubtitle.copyWith(
-                                          color: Colors.black,
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.w600),
-                                    ),
-                                  ],
+                                Positioned(
+                                    child: Padding(
+                                  padding: const EdgeInsets.all(12.0),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Image.asset("assets/shoes_1.png"),
+                                      Text(
+                                        "BEST SELLER",
+                                        textAlign: TextAlign.left,
+                                        style: kSubtitle.copyWith(
+                                            color: Colors.blue,
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.w600),
+                                      ),
+                                      const SizedBox(
+                                        height: 4,
+                                      ),
+                                      Text(
+                                        "Nike Jordan",
+                                        textAlign: TextAlign.left,
+                                        style: kHeading4,
+                                      ),
+                                      const SizedBox(
+                                        height: 12,
+                                      ),
+                                      Text(
+                                        "Rp. 302.000",
+                                        textAlign: TextAlign.left,
+                                        style: kSubtitle.copyWith(
+                                            color: Colors.black,
+                                            fontSize: 14,
+                                            fontWeight: FontWeight.w600),
+                                      ),
+                                    ],
+                                  ),
+                                )),
+                                Positioned(
+                                  bottom: 0,
+                                  right: 0,
+                                  child: Container(
+                                      padding: const EdgeInsets.all(5),
+                                      decoration: const BoxDecoration(
+                                          color: Color(0xff0D6EFD),
+                                          borderRadius: BorderRadius.only(
+                                            topLeft: Radius.circular(14),
+                                            bottomRight: Radius.circular(14),
+                                          )),
+                                      child: const Icon(
+                                        Icons.add,
+                                        color: Colors.white,
+                                      )),
                                 ),
-                              )),
-                              Positioned(
-                                bottom: 0,
-                                right: 0,
-                                child: Container(
-                                    padding: const EdgeInsets.all(5),
-                                    decoration: const BoxDecoration(
-                                        color: Color(0xff0D6EFD),
-                                        borderRadius: BorderRadius.only(
-                                          topLeft: Radius.circular(14),
-                                          bottomRight: Radius.circular(14),
-                                        )),
-                                    child: const Icon(
-                                      Icons.add,
-                                      color: Colors.white,
-                                    )),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                         ),
                         const SizedBox(
                           width: 20,
                         ),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(16),
-                          ),
-                          child: Stack(
-                            children: [
-                              const Positioned(
-                                top: 12,
-                                left: 12,
-                                child: Icon(
-                                  Icons.favorite,
-                                  color: Colors.red,
-                                  size: 20,
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => DetailPage(),
+                                ));
+                          },
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(16),
+                            ),
+                            child: Stack(
+                              children: [
+                                const Positioned(
+                                  top: 12,
+                                  left: 12,
+                                  child: Icon(
+                                    Icons.favorite,
+                                    color: Colors.red,
+                                    size: 20,
+                                  ),
                                 ),
-                              ),
-                              Positioned(
-                                  child: Padding(
-                                padding: const EdgeInsets.all(12.0),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Image.asset("assets/shoes_2.png"),
-                                    Text(
-                                      "BEST SELLER",
-                                      textAlign: TextAlign.left,
-                                      style: kSubtitle.copyWith(
-                                          color: Colors.blue,
-                                          fontSize: 12,
-                                          fontWeight: FontWeight.w600),
-                                    ),
-                                    const SizedBox(
-                                      height: 4,
-                                    ),
-                                    Text(
-                                      "Nike Jordan Max",
-                                      textAlign: TextAlign.left,
-                                      style: kHeading4,
-                                    ),
-                                    const SizedBox(
-                                      height: 12,
-                                    ),
-                                    Text(
-                                      "Rp. 752.000",
-                                      textAlign: TextAlign.left,
-                                      style: kSubtitle.copyWith(
-                                          color: Colors.black,
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.w600),
-                                    ),
-                                  ],
+                                Positioned(
+                                    child: Padding(
+                                  padding: const EdgeInsets.all(12.0),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Image.asset("assets/shoes_2.png"),
+                                      Text(
+                                        "BEST SELLER",
+                                        textAlign: TextAlign.left,
+                                        style: kSubtitle.copyWith(
+                                            color: Colors.blue,
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.w600),
+                                      ),
+                                      const SizedBox(
+                                        height: 4,
+                                      ),
+                                      Text(
+                                        "Nike Jordan Max",
+                                        textAlign: TextAlign.left,
+                                        style: kHeading4,
+                                      ),
+                                      const SizedBox(
+                                        height: 12,
+                                      ),
+                                      Text(
+                                        "Rp. 752.000",
+                                        textAlign: TextAlign.left,
+                                        style: kSubtitle.copyWith(
+                                            color: Colors.black,
+                                            fontSize: 14,
+                                            fontWeight: FontWeight.w600),
+                                      ),
+                                    ],
+                                  ),
+                                )),
+                                Positioned(
+                                  bottom: 0,
+                                  right: 0,
+                                  child: Container(
+                                      padding: const EdgeInsets.all(5),
+                                      decoration: const BoxDecoration(
+                                          color: Color(0xff0D6EFD),
+                                          borderRadius: BorderRadius.only(
+                                            topLeft: Radius.circular(14),
+                                            bottomRight: Radius.circular(14),
+                                          )),
+                                      child: const Icon(
+                                        Icons.add,
+                                        color: Colors.white,
+                                      )),
                                 ),
-                              )),
-                              Positioned(
-                                bottom: 0,
-                                right: 0,
-                                child: Container(
-                                    padding: const EdgeInsets.all(5),
-                                    decoration: const BoxDecoration(
-                                        color: Color(0xff0D6EFD),
-                                        borderRadius: BorderRadius.only(
-                                          topLeft: Radius.circular(14),
-                                          bottomRight: Radius.circular(14),
-                                        )),
-                                    child: const Icon(
-                                      Icons.add,
-                                      color: Colors.white,
-                                    )),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                         ),
                       ],

@@ -31,138 +31,136 @@ class ProfilePage extends StatelessWidget {
         centerTitle: true,
       ),
       body: SingleChildScrollView(
-        child: SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Container(
-                  margin: const EdgeInsets.only(top: 40),
-                  alignment: Alignment.center,
-                  child: Stack(
-                    children: [
-                      Image.asset("assets/human.png"),
-                      Positioned(
-                        bottom: 0,
-                        right: 0,
-                        child: GestureDetector(
-                          onTap: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const EditPage(),
-                                ));
-                          },
-                          child: Image.asset("assets/icons/edit.png"),
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-                const SizedBox(
-                  height: 22,
-                ),
-                Text(
-                  "Your Name",
-                  style: kHeading4,
-                ),
-                const SizedBox(
-                  height: 12,
-                ),
-                TextField(
-                  style: const TextStyle(fontSize: 15),
-                  decoration: InputDecoration(
-                      hintText: "Lorem Ipsum",
-                      contentPadding: const EdgeInsets.symmetric(
-                        vertical: 5,
-                        horizontal: 20,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                margin: const EdgeInsets.only(top: 40),
+                alignment: Alignment.center,
+                child: Stack(
+                  children: [
+                    Image.asset("assets/human.png"),
+                    Positioned(
+                      bottom: 0,
+                      right: 0,
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const EditPage(),
+                              ));
+                        },
+                        child: Image.asset("assets/icons/edit.png"),
                       ),
-                      fillColor: const Color(0xffF7F7F9),
-                      filled: true,
-                      border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(20),
-                          borderSide: BorderSide.none)),
+                    )
+                  ],
                 ),
-                const SizedBox(
-                  height: 30,
-                ),
-                Text(
-                  "Email Address",
-                  style: kHeading4,
-                ),
-                const SizedBox(
-                  height: 12,
-                ),
-                TextField(
-                  style: const TextStyle(fontSize: 15),
-                  decoration: InputDecoration(
-                      hintText: "loremipsum@gmail.com",
-                      contentPadding: const EdgeInsets.symmetric(
-                        vertical: 5,
-                        horizontal: 20,
-                      ),
-                      fillColor: const Color(0xffF7F7F9),
-                      filled: true,
-                      border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(20),
-                          borderSide: BorderSide.none)),
-                ),
-                const SizedBox(
-                  height: 30,
-                ),
-                Text(
-                  "Password",
-                  style: kHeading4,
-                ),
-                const SizedBox(
-                  height: 12,
-                ),
-                TextField(
-                  obscureText: true,
-                  style: const TextStyle(fontSize: 15),
-                  decoration: InputDecoration(
-                      hintText: "********",
-                      contentPadding: const EdgeInsets.symmetric(
-                        vertical: 5,
-                        horizontal: 20,
-                      ),
-                      fillColor: const Color(0xffF7F7F9),
-                      filled: true,
-                      border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(20),
-                          borderSide: BorderSide.none)),
-                ),
-                const SizedBox(
-                  height: 8,
-                ),
-                Container(
-                  alignment: Alignment.centerRight,
-                  width: double.infinity,
-                  child: TextButton(
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const ForgotPasswordPage(),
-                          ));
-                    },
-                    child: Text(
-                      "Recovery Password",
-                      style: kBodyText.copyWith(color: const Color(0xff707B81)),
+              ),
+              const SizedBox(
+                height: 22,
+              ),
+              Text(
+                "Your Name",
+                style: kHeading4,
+              ),
+              const SizedBox(
+                height: 12,
+              ),
+              TextField(
+                style: const TextStyle(fontSize: 15),
+                decoration: InputDecoration(
+                    hintText: "Lorem Ipsum",
+                    contentPadding: const EdgeInsets.symmetric(
+                      vertical: 5,
+                      horizontal: 20,
                     ),
+                    fillColor: const Color(0xffF7F7F9),
+                    filled: true,
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(20),
+                        borderSide: BorderSide.none)),
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+              Text(
+                "Email Address",
+                style: kHeading4,
+              ),
+              const SizedBox(
+                height: 12,
+              ),
+              TextField(
+                style: const TextStyle(fontSize: 15),
+                decoration: InputDecoration(
+                    hintText: "loremipsum@gmail.com",
+                    contentPadding: const EdgeInsets.symmetric(
+                      vertical: 5,
+                      horizontal: 20,
+                    ),
+                    fillColor: const Color(0xffF7F7F9),
+                    filled: true,
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(20),
+                        borderSide: BorderSide.none)),
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+              Text(
+                "Password",
+                style: kHeading4,
+              ),
+              const SizedBox(
+                height: 12,
+              ),
+              TextField(
+                obscureText: true,
+                style: const TextStyle(fontSize: 15),
+                decoration: InputDecoration(
+                    hintText: "********",
+                    contentPadding: const EdgeInsets.symmetric(
+                      vertical: 5,
+                      horizontal: 20,
+                    ),
+                    fillColor: const Color(0xffF7F7F9),
+                    filled: true,
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(20),
+                        borderSide: BorderSide.none)),
+              ),
+              const SizedBox(
+                height: 8,
+              ),
+              Container(
+                alignment: Alignment.centerRight,
+                width: double.infinity,
+                child: TextButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const ForgotPasswordPage(),
+                        ));
+                  },
+                  child: Text(
+                    "Recovery Password",
+                    style: kBodyText.copyWith(color: const Color(0xff707B81)),
                   ),
                 ),
-                const SizedBox(
-                  height: 24,
-                ),
-                CustomButton(
-                  text: "Save Now",
-                  callback: () {},
-                  color: const Color(0xff0D6EFD),
-                ),
-              ],
-            ),
+              ),
+              const SizedBox(
+                height: 24,
+              ),
+              CustomButton(
+                text: "Save Now",
+                callback: () {},
+                color: const Color(0xff0D6EFD),
+              ),
+            ],
           ),
         ),
       ),
