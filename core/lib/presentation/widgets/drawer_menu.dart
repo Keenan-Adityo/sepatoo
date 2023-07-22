@@ -11,7 +11,6 @@ class DrawerMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     SizeConfig.init(context);
-    print(SizeConfig.screenWidth);
     return Scaffold(
       backgroundColor: const Color(0xff1483C2),
       body: SafeArea(

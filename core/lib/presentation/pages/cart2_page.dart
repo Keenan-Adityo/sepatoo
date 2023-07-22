@@ -1,7 +1,4 @@
-import 'package:core/presentation/pages/edit_page.dart';
-import 'package:core/presentation/pages/forgot_password_page.dart';
 import 'package:core/presentation/pages/home_page.dart';
-import 'package:core/presentation/pages/login_page.dart';
 import 'package:core/presentation/widgets/custom_button.dart';
 import 'package:core/presentation/widgets/line_dash.dart';
 import 'package:core/styles/size_config.dart';
@@ -17,9 +14,9 @@ class Cart2Page extends StatelessWidget {
     return Stack(
       children: [
         Scaffold(
-          backgroundColor: Color(0xffF7F7F9),
+          backgroundColor: const Color(0xffF7F7F9),
           appBar: AppBar(
-            backgroundColor: Color(0xffF7F7F9),
+            backgroundColor: const Color(0xffF7F7F9),
             leading: Container(
               padding: const EdgeInsets.only(left: 20),
               child: IconButton(
@@ -46,7 +43,7 @@ class Cart2Page extends StatelessWidget {
                 child: Container(
                   width: double.infinity,
                   color: Colors.white,
-                  margin: EdgeInsets.symmetric(vertical: 46),
+                  margin: const EdgeInsets.symmetric(vertical: 46),
                   padding:
                       const EdgeInsets.symmetric(horizontal: 34, vertical: 16),
                   child: Column(
@@ -56,19 +53,19 @@ class Cart2Page extends StatelessWidget {
                         "Contact Information",
                         style: kHeading4.copyWith(fontSize: 14),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 16,
                       ),
                       Row(
                         children: [
                           Container(
-                            padding: EdgeInsets.all(10),
+                            padding: const EdgeInsets.all(10),
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(12),
-                                color: Color(0xffF8F9FA)),
+                                color: const Color(0xffF8F9FA)),
                             child: SvgPicture.asset("assets/icons/msg.svg"),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 12,
                           ),
                           Expanded(
@@ -82,7 +79,7 @@ class Cart2Page extends StatelessWidget {
                                 Text(
                                   "Email",
                                   style: kButtonText.copyWith(
-                                      fontSize: 12, color: Color(0xff707B81)),
+                                      fontSize: 12, color: const Color(0xff707B81)),
                                 ),
                               ],
                             ),
@@ -90,19 +87,19 @@ class Cart2Page extends StatelessWidget {
                           Image.asset("assets/icons/pen.png")
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 16,
                       ),
                       Row(
                         children: [
                           Container(
-                            padding: EdgeInsets.all(10),
+                            padding: const EdgeInsets.all(10),
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(12),
-                                color: Color(0xffF8F9FA)),
+                                color: const Color(0xffF8F9FA)),
                             child: SvgPicture.asset("assets/icons/phone.svg"),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 12,
                           ),
                           Expanded(
@@ -116,7 +113,7 @@ class Cart2Page extends StatelessWidget {
                                 Text(
                                   "Phone",
                                   style: kButtonText.copyWith(
-                                      fontSize: 12, color: Color(0xff707B81)),
+                                      fontSize: 12, color: const Color(0xff707B81)),
                                 ),
                               ],
                             ),
@@ -124,14 +121,14 @@ class Cart2Page extends StatelessWidget {
                           Image.asset("assets/icons/pen.png")
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 12,
                       ),
                       Text(
                         "Address",
                         style: kHeading4.copyWith(fontSize: 14),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 12,
                       ),
                       Row(
@@ -140,29 +137,29 @@ class Cart2Page extends StatelessWidget {
                           Text(
                             "Rungkut, Kota Surabaya, Jawa Timur",
                             style: kButtonText.copyWith(
-                                fontSize: 12, color: Color(0xff707B81)),
+                                fontSize: 12, color: const Color(0xff707B81)),
                           ),
-                          Icon(Icons.keyboard_arrow_down),
+                          const Icon(Icons.keyboard_arrow_down),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 16,
                       ),
                       Image.asset("assets/Map.png"),
-                      SizedBox(
+                      const SizedBox(
                         height: 12,
                       ),
                       Text(
                         "Payment Method",
                         style: kHeading4.copyWith(fontSize: 14),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 12,
                       ),
                       Row(
                         children: [
                           Image.asset("assets/mandiri.png"),
-                          SizedBox(
+                          const SizedBox(
                             width: 12,
                           ),
                           Expanded(
@@ -176,12 +173,12 @@ class Cart2Page extends StatelessWidget {
                                 Text(
                                   "**** **** 0696 4629",
                                   style: kButtonText.copyWith(
-                                      fontSize: 12, color: Color(0xff707B81)),
+                                      fontSize: 12, color: const Color(0xff707B81)),
                                 ),
                               ],
                             ),
                           ),
-                          Icon(Icons.keyboard_arrow_down),
+                          const Icon(Icons.keyboard_arrow_down),
                         ],
                       ),
                     ],
@@ -194,7 +191,7 @@ class Cart2Page extends StatelessWidget {
         Positioned(
           bottom: 0,
           child: Container(
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 32),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 32),
             width: SizeConfig.screenWidth,
             color: Colors.white,
             child: Column(
@@ -204,9 +201,9 @@ class Cart2Page extends StatelessWidget {
                   children: [
                     DefaultTextStyle(
                       style: kHeading4.copyWith(
-                        color: Color(0xff707B81),
+                        color: const Color(0xff707B81),
                       ),
-                      child: Text(
+                      child: const Text(
                         "Subtotal",
                       ),
                     ),
@@ -215,13 +212,13 @@ class Cart2Page extends StatelessWidget {
                         fontWeight: FontWeight.w500,
                         color: Colors.black,
                       ),
-                      child: Text(
+                      child: const Text(
                         "Rp 1.753.950",
                       ),
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Row(
@@ -229,9 +226,9 @@ class Cart2Page extends StatelessWidget {
                   children: [
                     DefaultTextStyle(
                       style: kHeading4.copyWith(
-                        color: Color(0xff707B81),
+                        color: const Color(0xff707B81),
                       ),
-                      child: Text(
+                      child: const Text(
                         "Delivery",
                       ),
                     ),
@@ -240,19 +237,19 @@ class Cart2Page extends StatelessWidget {
                         fontWeight: FontWeight.w500,
                         color: Colors.black,
                       ),
-                      child: Text(
+                      child: const Text(
                         "Rp 60.200",
                       ),
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 16,
                 ),
-                LineDash(
+                const LineDash(
                   color: Color(0xff707B81),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 16,
                 ),
                 Row(
@@ -262,22 +259,22 @@ class Cart2Page extends StatelessWidget {
                       style: kHeading4.copyWith(
                         color: Colors.black,
                       ),
-                      child: Text(
+                      child: const Text(
                         "Total Cost",
                       ),
                     ),
                     DefaultTextStyle(
                       style: kSubtitle.copyWith(
                         fontWeight: FontWeight.w500,
-                        color: Color(0xff0D6EFD),
+                        color: const Color(0xff0D6EFD),
                       ),
-                      child: Text(
+                      child: const Text(
                         "Rp 1.814.150",
                       ),
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
                 CustomButton(
@@ -307,7 +304,7 @@ class Cart2Page extends StatelessWidget {
                                   color: Colors.black,
                                   fontSize: 20,
                                 ),
-                                child: Text(
+                                child: const Text(
                                   "Your Payment Is Successful",
                                   textAlign: TextAlign.center,
                                 ),
@@ -321,7 +318,7 @@ class Cart2Page extends StatelessWidget {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                        builder: (context) => HomePage(),
+                                        builder: (context) => const HomePage(),
                                       ));
                                 },
                                 color: const Color(0xff0D6EFD),

@@ -1,7 +1,4 @@
 import 'package:core/presentation/pages/cart_page.dart';
-import 'package:core/presentation/pages/edit_page.dart';
-import 'package:core/presentation/pages/forgot_password_page.dart';
-import 'package:core/presentation/widgets/custom_button.dart';
 import 'package:core/styles/size_config.dart';
 import 'package:core/styles/text_styles.dart';
 import 'package:flutter/material.dart';
@@ -66,7 +63,7 @@ class DetailPage extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Container(
+                          SizedBox(
                             width: SizeConfig.screenWidth - 76,
                             child: Text(
                               "Nike Air Max 270 Essential",
@@ -74,14 +71,14 @@ class DetailPage extends StatelessWidget {
                                   fontSize: 26, color: Colors.black),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                           ),
                           Text(
                             "Men's Shoes",
-                            style: kSubtitle.copyWith(color: Color(0xff707B81)),
+                            style: kSubtitle.copyWith(color: const Color(0xff707B81)),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                           ),
                           Text(
@@ -104,7 +101,7 @@ class DetailPage extends StatelessWidget {
               Text(
                 "The Max Air 270 unit delivers unrivaled, all-day comfort. The sleek, running-inspired design roots you to everything Nike........",
                 style: kSubtitle.copyWith(
-                  color: Color(0xff707B81),
+                  color: const Color(0xff707B81),
                 ),
               ),
               const SizedBox(
@@ -143,7 +140,7 @@ class DetailPage extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => CartPage(),
+                              builder: (context) => const CartPage(),
                             ));
                       },
                       child: Container(
@@ -152,7 +149,7 @@ class DetailPage extends StatelessWidget {
                         child: Row(
                           children: [
                             Image.asset("assets/bag-2.png"),
-                            SizedBox(
+                            const SizedBox(
                               width: 16,
                             ),
                             Text(
@@ -167,7 +164,7 @@ class DetailPage extends StatelessWidget {
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
             ],

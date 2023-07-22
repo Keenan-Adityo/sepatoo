@@ -103,7 +103,7 @@ class ForgotPasswordPage extends StatelessWidget {
                                     style: kHeading4.copyWith(
                                         color: Colors.black,
                                         fontWeight: FontWeight.bold),
-                                    child: Text(
+                                    child: const Text(
                                       "Check Your Email",
                                     ),
                                   ),
@@ -113,7 +113,7 @@ class ForgotPasswordPage extends StatelessWidget {
                                   DefaultTextStyle(
                                     style:
                                         kSubtitle.copyWith(color: Colors.black),
-                                    child: Text(
+                                    child: const Text(
                                       "We have send password recovery code in your email",
                                       textAlign: TextAlign.center,
                                     ),

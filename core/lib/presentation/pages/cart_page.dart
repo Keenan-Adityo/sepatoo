@@ -1,6 +1,4 @@
 import 'package:core/presentation/pages/cart2_page.dart';
-import 'package:core/presentation/pages/edit_page.dart';
-import 'package:core/presentation/pages/forgot_password_page.dart';
 import 'package:core/presentation/widgets/custom_button.dart';
 import 'package:core/presentation/widgets/line_dash.dart';
 import 'package:core/styles/size_config.dart';
@@ -16,9 +14,9 @@ class CartPage extends StatelessWidget {
     return Stack(
       children: [
         Scaffold(
-          backgroundColor: Color(0xffF7F7F9),
+          backgroundColor: const Color(0xffF7F7F9),
           appBar: AppBar(
-            backgroundColor: Color(0xffF7F7F9),
+            backgroundColor: const Color(0xffF7F7F9),
             leading: Container(
               padding: const EdgeInsets.only(left: 20),
               child: IconButton(
@@ -52,23 +50,23 @@ class CartPage extends StatelessWidget {
                         "3 Item",
                         style: kSubtitle,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 8,
                       ),
                       Row(
                         children: [
                           Container(
                             height: 104,
-                            padding: EdgeInsets.symmetric(
+                            padding: const EdgeInsets.symmetric(
                                 horizontal: 22, vertical: 16),
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(8),
-                              color: Color(0xff0D6EFD),
+                              color: const Color(0xff0D6EFD),
                             ),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Icon(
+                                const Icon(
                                   Icons.add,
                                   color: Colors.white,
                                 ),
@@ -79,20 +77,20 @@ class CartPage extends StatelessWidget {
                                     fontWeight: FontWeight.w400,
                                   ),
                                 ),
-                                Icon(
+                                const Icon(
                                   Icons.minimize,
                                   color: Colors.white,
                                 ),
                               ],
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 19,
                           ),
                           Expanded(
                             child: Container(
                               height: 104,
-                              padding: EdgeInsets.symmetric(
+                              padding: const EdgeInsets.symmetric(
                                   horizontal: 10, vertical: 10),
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(8),
@@ -101,7 +99,7 @@ class CartPage extends StatelessWidget {
                               child: Row(
                                 children: [
                                   Image.asset("assets/cart_1.png"),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 20,
                                   ),
                                   Column(
@@ -126,7 +124,7 @@ class CartPage extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 14,
                       ),
                       Row(
@@ -134,7 +132,7 @@ class CartPage extends StatelessWidget {
                           Expanded(
                             child: Container(
                               height: 104,
-                              padding: EdgeInsets.symmetric(
+                              padding: const EdgeInsets.symmetric(
                                   horizontal: 10, vertical: 10),
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(8),
@@ -143,7 +141,7 @@ class CartPage extends StatelessWidget {
                               child: Row(
                                 children: [
                                   Image.asset("assets/cart_2.png"),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 20,
                                   ),
                                   Column(
@@ -166,28 +164,28 @@ class CartPage extends StatelessWidget {
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 19,
                           ),
                           Container(
                             height: 104,
-                            padding: EdgeInsets.symmetric(
+                            padding: const EdgeInsets.symmetric(
                                 horizontal: 22, vertical: 16),
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(8),
-                              color: Color(0xffFF1900),
+                              color: const Color(0xffFF1900),
                             ),
                             child: SvgPicture.asset("assets/icons/trash.svg"),
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 14,
                       ),
                       Container(
                         height: 104,
-                        padding:
-                            EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 10, vertical: 10),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
                           color: Colors.white,
@@ -195,7 +193,7 @@ class CartPage extends StatelessWidget {
                         child: Row(
                           children: [
                             Image.asset("assets/cart_3.png"),
-                            SizedBox(
+                            const SizedBox(
                               width: 20,
                             ),
                             Column(
@@ -226,7 +224,7 @@ class CartPage extends StatelessWidget {
         Positioned(
           bottom: 0,
           child: Container(
-            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 32),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 32),
             width: SizeConfig.screenWidth,
             color: Colors.white,
             child: Column(
@@ -236,9 +234,9 @@ class CartPage extends StatelessWidget {
                   children: [
                     DefaultTextStyle(
                       style: kHeading4.copyWith(
-                        color: Color(0xff707B81),
+                        color: const Color(0xff707B81),
                       ),
-                      child: Text(
+                      child: const Text(
                         "Subtotal",
                       ),
                     ),
@@ -247,13 +245,13 @@ class CartPage extends StatelessWidget {
                         fontWeight: FontWeight.w500,
                         color: Colors.black,
                       ),
-                      child: Text(
+                      child: const Text(
                         "Rp 1.753.950",
                       ),
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Row(
@@ -261,9 +259,9 @@ class CartPage extends StatelessWidget {
                   children: [
                     DefaultTextStyle(
                       style: kHeading4.copyWith(
-                        color: Color(0xff707B81),
+                        color: const Color(0xff707B81),
                       ),
-                      child: Text(
+                      child: const Text(
                         "Delivery",
                       ),
                     ),
@@ -272,19 +270,19 @@ class CartPage extends StatelessWidget {
                         fontWeight: FontWeight.w500,
                         color: Colors.black,
                       ),
-                      child: Text(
+                      child: const Text(
                         "Rp 60.200",
                       ),
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 16,
                 ),
-                LineDash(
+                const LineDash(
                   color: Color(0xff707B81),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 16,
                 ),
                 Row(
@@ -294,22 +292,22 @@ class CartPage extends StatelessWidget {
                       style: kHeading4.copyWith(
                         color: Colors.black,
                       ),
-                      child: Text(
+                      child: const Text(
                         "Total Cost",
                       ),
                     ),
                     DefaultTextStyle(
                       style: kSubtitle.copyWith(
                         fontWeight: FontWeight.w500,
-                        color: Color(0xff0D6EFD),
+                        color: const Color(0xff0D6EFD),
                       ),
-                      child: Text(
+                      child: const Text(
                         "Rp 1.814.150",
                       ),
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
                 CustomButton(
@@ -318,7 +316,7 @@ class CartPage extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => Cart2Page(),
+                          builder: (context) => const Cart2Page(),
                         ));
                   },
                   color: const Color(0xff0D6EFD),
