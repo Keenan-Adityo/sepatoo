@@ -1,5 +1,5 @@
 import 'package:core/presentation/pages/on_boarding3.dart';
-import 'package:core/presentation/widgets/on_boarding_button.dart';
+import 'package:core/presentation/widgets/onboarding_button.dart';
 import 'package:core/styles/size_config.dart';
 import 'package:core/styles/text_styles.dart';
 import 'package:flutter/material.dart';
@@ -56,6 +56,7 @@ class OnBoarding2 extends StatelessWidget {
                     height: 65,
                   ),
                   OnBoardingButton(
+                      color: Colors.white,
                       text: "Next",
                       callback: () {
                         Navigator.push(

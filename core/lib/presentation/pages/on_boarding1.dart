@@ -1,5 +1,5 @@
 import 'package:core/presentation/pages/on_boarding2.dart';
-import 'package:core/presentation/widgets/on_boarding_button.dart';
+import 'package:core/presentation/widgets/onboarding_button.dart';
 import 'package:core/styles/size_config.dart';
 import 'package:core/styles/text_styles.dart';
 import 'package:flutter/material.dart';
@@ -70,6 +70,7 @@ class OnBoarding1 extends StatelessWidget {
                   child: Image.asset("assets/background/ob1_2.png"),
                 ),
                 OnBoardingButton(
+                    color: Colors.white,
                     text: "Get Started",
                     callback: () {
                       Navigator.push(

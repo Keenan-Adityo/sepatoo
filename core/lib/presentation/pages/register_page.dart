@@ -1,13 +1,12 @@
 import 'package:core/presentation/pages/forgot_password_page.dart';
 import 'package:core/presentation/pages/home_page.dart';
-import 'package:core/presentation/pages/register_page.dart';
 import 'package:core/presentation/widgets/custom_button.dart';
 import 'package:core/presentation/widgets/onboarding_button.dart';
 import 'package:core/styles/text_styles.dart';
 import 'package:flutter/material.dart';
 
-class LoginPage extends StatelessWidget {
-  const LoginPage({Key? key}) : super(key: key);
+class RegisterPage extends StatelessWidget {
+  const RegisterPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +38,7 @@ class LoginPage extends StatelessWidget {
                     child: Column(
                       children: [
                         Text(
-                          "Hello Again!",
+                          "Register Account",
                           style: kHeading3,
                           textAlign: TextAlign.center,
                         ),
@@ -56,6 +55,30 @@ class LoginPage extends StatelessWidget {
                   ),
                   SizedBox(
                     height: 30,
+                  ),
+                  Text(
+                    "Your Name",
+                    style: kHeading4,
+                  ),
+                  SizedBox(
+                    height: 12,
+                  ),
+                  TextField(
+                    style: const TextStyle(fontSize: 15),
+                    decoration: InputDecoration(
+                        hintText: "XXXXXXXXXX",
+                        contentPadding: const EdgeInsets.symmetric(
+                          vertical: 5,
+                          horizontal: 20,
+                        ),
+                        fillColor: Color(0xffF7F7F9),
+                        filled: true,
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(20),
+                            borderSide: BorderSide.none)),
+                  ),
+                  SizedBox(
+                    height: 12,
                   ),
                   Text(
                     "Email Address",
@@ -107,35 +130,15 @@ class LoginPage extends StatelessWidget {
                             borderSide: BorderSide.none)),
                   ),
                   SizedBox(
-                    height: 12,
-                  ),
-                  Container(
-                    alignment: Alignment.centerRight,
-                    width: double.infinity,
-                    child: TextButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => ForgotPasswordPage(),
-                            ));
-                      },
-                      child: Text(
-                        "Recovery Password",
-                        style: kBodyText.copyWith(color: Color(0xff707B81)),
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    height: 24,
+                    height: 40,
                   ),
                   CustomButton(
-                    text: "Sign In",
-                    callback: () {
+                    text: "Sign Up",
+                    callback: () async {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => HomePage(),
+                            builder: (context) => ForgotPasswordPage(),
                           ));
                     },
                     color: Color(0xff0D6EFD),
@@ -157,19 +160,15 @@ class LoginPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "New User? ",
+                    "Already Have Account? ",
                     style: kHeading4,
                   ),
                   TextButton(
                     onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => RegisterPage(),
-                          ));
+                      Navigator.pop(context);
                     },
                     child: Text(
-                      "Create Account",
+                      "Log In",
                       style: kHeading4.copyWith(
                           fontWeight: FontWeight.bold, color: Colors.black),
                     ),

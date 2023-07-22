@@ -4,10 +4,12 @@ import 'package:flutter/material.dart';
 class OnBoardingButton extends StatelessWidget {
   final VoidCallback callback;
   final String text;
+  final Color color;
 
   OnBoardingButton({
     required this.text,
     required this.callback,
+    required this.color,
     super.key,
   });
 
@@ -21,7 +23,7 @@ class OnBoardingButton extends StatelessWidget {
       ),
       child: Material(
         borderRadius: BorderRadius.circular(13),
-        color: Colors.white,
+        color: color,
         child: InkWell(
           onTap: callback,
           child: Container(
