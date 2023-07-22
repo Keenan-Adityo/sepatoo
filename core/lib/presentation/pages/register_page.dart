@@ -4,6 +4,7 @@ import 'package:core/presentation/widgets/custom_button.dart';
 import 'package:core/presentation/widgets/onboarding_button.dart';
 import 'package:core/styles/text_styles.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class RegisterPage extends StatelessWidget {
   const RegisterPage({Key? key}) : super(key: key);
@@ -146,10 +147,37 @@ class RegisterPage extends StatelessWidget {
                   SizedBox(
                     height: 24,
                   ),
-                  OnBoardingButton(
-                    text: "Google",
-                    callback: () {},
-                    color: Color(0xffF7F7F9),
+                  Container(
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(13),
+                    ),
+                    child: Material(
+                      borderRadius: BorderRadius.circular(13),
+                      color: Color(0xffF7F7F9),
+                      child: InkWell(
+                        onTap: () {},
+                        child: Container(
+                          padding: EdgeInsets.symmetric(
+                              vertical: 17, horizontal: 25),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              SvgPicture.asset("assets/icons/google.svg"),
+                              SizedBox(
+                                width: 14,
+                              ),
+                              Text(
+                                "Sign Up With Google",
+                                textAlign: TextAlign.center,
+                                style:
+                                    kButtonText.copyWith(color: Colors.black),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
                   ),
                 ],
               ),
